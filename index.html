@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4df5c4d0bb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/shuja.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><span>Frontend </span> Learner</p>
+                <h1>Hi,I'm <span>Shuja</span><br>Ali From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+    <!------------About--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Snapchat-990791660.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm Shuja Ali Sattar, a frontend developer skilled in HTML, CSS, JavaScript, React.js, and UI/UX
+                        design. I initially explored data science, but my true passion is web development—building
+                        responsive, user-friendly websites. I'm currently looking for frontend internships and freelance
+                        projects to enhance my skills and gain real-world experience.
+
+                        I enjoy solving coding challenges and continuously learning new technologies. My goal is to
+                        create efficient and visually appealing web solutions that enhance user experiences. Let’s
+                        connect and create something amazing!</p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Wep/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Frontend Development</span><br>Building Dynamic Website</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2025</span><br>BSCS From Virtual Lahore</li>
+                            <li><span>2020-2022</span><br>ICS from FFC Lahore.</li>
+                            <li><span>2018-2020</span><br>Matric from AGS Lahore.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------Services--------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in creating visually appealing, user-friendly, and responsive web designs. Using
+                        tools like Figma, Adobe XD, and Canva, I ensure smooth navigation and modern design principles.
+                        My work focuses on accessibility, performance, and seamless user experience, with projects
+                        available on GitHub and live links.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I focus on designing intuitive and engaging user interfaces with a strong emphasis on user
+                        experience. I use tools like Figma and Adobe XD to create wireframes, prototypes, and visually
+                        appealing designs. My goal is to enhance usability, accessibility, and overall interaction,
+                        ensuring a seamless digital experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Frontend Development</h2>
+                    <p>I specialize in frontend development, creating responsive and interactive web applications using
+                        HTML, CSS, JavaScript, and React. I focus on smooth animations, optimized performance, and
+                        user-friendly interfaces for an enhanced experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!------------portfolio--------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>I developed a weather app that fetches real-time weather data using the OpenWeather API,
+                            displaying temperature, humidity, wind speed, and conditions with dynamic icons.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>Game App</h3>
+                        <p>I developed a Rock Paper Scissors game using JavaScript, allowing users to play against the
+                            computer with real-time result updates.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png ">
+                    <div class="layer">
+                        <h3>Countdown App</h3>
+                        <p>I created a Countdown Timer app using JavaScript, enabling users to set a timer and track the
+                            remaining time dynamically.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!------------Contact--------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>shujaalisattar@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+92 317 0986975</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Kevin. Made with by Easy Tutorials</p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzH77zmjIOn0LhESlpnGZI9c1Z2FP4_H01EUEmLgZCDN0Yv6ctervaXs1LwLDViFRx2BQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHtml = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+</body>
+
+</html>
